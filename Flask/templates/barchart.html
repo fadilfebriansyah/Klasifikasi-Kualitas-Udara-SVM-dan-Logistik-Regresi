@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Site keywords here" />
+    <meta name="description" content="" />
+    <meta name="copyright" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Bar Chart</title>
+    <!-- Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='`avicon.png') }}" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+    />
+    <!-- Nice Select CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/nice-select.css') }}"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/font-awesome.min.css') }}"
+    />
+    <!-- icofont CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/icofont.css') }}"
+    />
+    <!-- Slicknav -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/slicknav.min.css') }}"
+    />
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/owl-carousel.css') }}"
+    />
+    <!-- Datepicker CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/datepicker.css') }}"
+    />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/animate.min.css') }}"
+    />
+    <!-- Magnific Popup CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/magnific-popup.css') }}"
+    />
+
+    <!-- Medipro CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/normalize.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/responsive.css') }}"
+    />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+
+        <div class="indicator">
+          <svg width="16px" height="12px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline
+              id="front"
+              points="1 6 4 6 6 11 10 1 12 6 15 6"
+            ></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- End Preloader -->
+    {% include 'header.html' %}
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+      <div class="container">
+        <div class="bread-inner">
+          <div class="row">
+            <div class="col-12">
+              <h2>Bar Chart</h2>
+              <ul class="bread-list">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><i class="icofont-simple-right"></i></li>
+                <li class="active">Visualisasi Bar Chart</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Single News -->
+    <section class="news-single section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-12 mx-auto">
+            <div class="row">
+              <div class="col-12">
+                <div class="single-main">
+                  <!-- News Head -->
+                  <div class="news-head">
+                    <img
+                      src="data:image/png;base64,{{ image_data }}"
+                      alt="Bar Chart"
+                    />
+                  </div>
+                  <!-- News Title -->
+                  <h1 class="news-title">
+                    <a href="#"
+                      >Distribusi Kategori Kualitas Udara di Provinsi DKI
+                      Jakarta (2016-2020)</a
+                    >
+                  </h1>
+                  <!-- Meta -->
+                  <div class="meta"></div>
+                  <!-- News Text -->
+                  <div class="news-text">
+                    <p>
+                      Visualisasi data ini menggunakan barchart yang
+                      menggambarkan rentang tahun 2016 hingga saat ini. Dalam
+                      diagram ini, setiap kategori kualitas udara memiliki warna
+                      yang khas untuk memudahkan pengenalan. Kategori "Baik"
+                      diberi warna biru, "Sangat Tidak Sehat" ditandai dengan
+                      warna oranye, "Sedang" ditampilkan dalam warna hijau, dan
+                      "Tidak Sehat" diwakili oleh warna merah. Dengan penggunaan
+                      warna ini, informasi dapat dipahami dengan cepat dan
+                      intuitif, mempermudah analisis terhadap perubahan kualitas
+                      udara selama periode waktu yang disajikan.
+                    </p>
+                    <blockquote class="overlay">
+                      <p>
+                        Dengan pemilihan warna yang khas pada setiap kategori
+                        kualitas udara, diagram batang ini tidak hanya
+                        memberikan visualisasi yang jelas, tetapi juga
+                        memperkuat pesan yang ingin disampaikan. Warna biru yang
+                        melambangkan kategori "Baik" memberikan kesan kebersihan
+                        dan kesehatan. Sementara itu, warna oranye yang mewakili
+                        "Sangat Tidak Sehat" menyoroti adanya kondisi yang
+                        memerlukan perhatian serius. Di sisi lain, warna hijau
+                        pada kategori "Sedang" menciptakan atmosfer damai,
+                        sedangkan warna merah pada "Tidak Sehat" mencerminkan
+                        peringatan akan adanya risiko kesehatan.
+                      </p>
+                    </blockquote>
+
+                    <p>
+                      Dengan tampilan yang menarik dan deskriptif ini, pemahaman
+                      terhadap dinamika kualitas udara dari tahun ke tahun dapat
+                      dengan mudah dipahami oleh pengamat, baik yang memiliki
+                      latar belakang teknis maupun yang tidak. Inilah kekuatan
+                      representasi visual yang tidak hanya menghadirkan data,
+                      tetapi juga memberikan nuansa dan kesan yang lebih
+                      mendalam.
+                    </p>
+                    <small>*Bar chart ini bisa berubah mengikuti data.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ End Single News -->
+
+    {% include 'footer.html' %}
+    <!-- jquery Min JS -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <!-- jquery Migrate JS -->
+    <script src="{{ url_for('static', filename='js/jquery-migrate-3.0.0.js') }}"></script>
+    <!-- jquery Ui JS -->
+    <script src="{{ url_for('static', filename='js/jquery-ui.min.js') }}"></script>
+    <!-- Easing JS -->
+    <script src="{{ url_for('static', filename='js/easing.js') }}"></script>
+    <!-- Color JS -->
+    <script src="{{ url_for('static', filename='js/colors.js') }}"></script>
+    <!-- ... (repeat for other scripts) -->
+    <!-- Popper JS -->
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <!-- Bootstrap Datepicker JS -->
+    <script src="{{ url_for('static', filename='js/bootstrap-datepicker.js') }}"></script>
+    <!-- Jquery Nav JS -->
+    <script src="{{ url_for('static', filename='js/jquery.nav.js') }}"></script>
+    <!-- Slicknav JS -->
+    <script src="{{ url_for('static', filename='js/slicknav.min.js') }}"></script>
+    <!-- ScrollUp JS -->
+    <script src="{{ url_for('static', filename='js/jquery.scrollUp.min.js') }}"></script>
+    <!-- Niceselect JS -->
+    <script src="{{ url_for('static', filename='js/niceselect.js') }}"></script>
+    <!-- Tilt Jquery JS -->
+    <script src="{{ url_for('static', filename='js/tilt.jquery.min.js') }}"></script>
+    <!-- Owl Carousel JS -->
+    <script src="{{ url_for('static', filename='js/owl-carousel.js') }}"></script>
+    <!-- counterup JS -->
+    <script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+    <!-- Steller JS -->
+    <script src="{{ url_for('static', filename='js/steller.js') }}"></script>
+    <!-- Wow JS -->
+    <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <!-- Magnific Popup JS -->
+    <script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+    <!-- Counter Up CDN JS -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <!-- <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script> -->
+    <!-- Bootstrap JS -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <!-- Main JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
